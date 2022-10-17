@@ -3,6 +3,6 @@ while var != "Au revoir":
     if var == "Bonjour":
         print("Bonjour à toi")
     else:
-    print(var)
-    
+        print(var)
+
     var = str(input(">"))
