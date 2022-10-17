@@ -1,7 +1,8 @@
 var = str(input(">"))
-if var == "Bonjour":
-    print("Bonjour à toi")
-elif var == "Au revoir":
-    exit()
-else:
-    print("Je n'ai pas compris")
+while var != "Au revoir":
+    if var == "Bonjour":
+        print("Bonjour à toi")
+    else:
+    print(var)
+    
+    var = str(input(">"))
