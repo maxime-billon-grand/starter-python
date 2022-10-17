@@ -1,18 +1,18 @@
-largeur = int(input("Entrez la largeur : "))
-hauteur = int(input("Entrez la hauteur : "))
-if largeur == 0 or hauteur == 0:
-    print("largeur ou hauteur nulle, pas de rectangle.")
+lenght = int(input("Please enter the lenght : "))
+height = int(input("Please enter the height : "))
+if lenght == 0 or height == 0:
+    print("Lenght or height is null.")
     exit()
 l, h = 1, 1
 tiret = "-"
 space = " "
 
-while h <= hauteur:
+while h <= height:
     print("|", end="")
-    if h == 1 or h == hauteur:
-        print(largeur*tiret, end="")
+    if h == 1 or h == height:
+        print(lenght*tiret, end="")
     else:
-        print(largeur*space, end="")
+        print(lenght*space, end="")
     print("|")
     h +=1
 
