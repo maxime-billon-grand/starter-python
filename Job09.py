@@ -23,3 +23,4 @@ while s <= size:
     s+=1
     y-=1
     z+=2
+# I tried to put only one big "print" function for each but it appear it add some additionnal spaces

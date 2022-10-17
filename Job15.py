@@ -1,3 +1,2 @@
-def disBonjour(p:str, n:str):
+def disBonjour(p:int, n:int):
     print("Bonjour", p, n)
-
