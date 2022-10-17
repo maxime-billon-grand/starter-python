@@ -15,4 +15,3 @@ while h <= height:
         print((lenght-2)*space, end="")
     print("|")
     h +=1
-
