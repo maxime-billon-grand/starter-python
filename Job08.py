@@ -10,9 +10,9 @@ space = " "
 while h <= height:
     print("|", end="")
     if h == 1 or h == height:
-        print(lenght*tiret, end="")
+        print((lenght-2)*tiret, end="")
     else:
-        print(lenght*space, end="")
+        print((lenght-2)*space, end="")
     print("|")
     h +=1
 
