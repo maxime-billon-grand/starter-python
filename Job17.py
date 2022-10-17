@@ -1,9 +1,9 @@
 def undefinedList(*nbr:int):
-    l=[]
+    myList=[]
     for i in nbr:
         if i%2 == 0:
-            l.append(i)
+            myList.append(i)
 
-    return l
+    print(myList)
 
-print(undefinedList(2, 3, 4, 6, 7))
+undefinedList(2, 3, 4, 6, 7)
