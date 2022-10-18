@@ -43,36 +43,41 @@ def myTitle(s:str):
 def myClean(s:str):
     l = list(s)
     i = 0
-    tour = 1
     while i < len(l):
-        print("tour :", tour,"- i=", i, " :", l, len(l))
+
         if i == 0 and l[i] == " ":
             del l[i]
-            print("manip1")
 
         elif i+1 == len(l) and l[i] == " ":
             del l[i]
-            print("manip2")
 
         elif l[i] == " " and l[i+1] == " ":
             del l[i]
-            print("manip3")
 
         else:
             i+=1
-        
-        print("tour :", tour,"- i=", i, " :", l, len(l))
-        tour +=1
     
     s = "".join(l)
-    print(l)
     return s
 
-#chain = str(input("Please enter a string: "))
-#param = str(input("Please enter the parameter: upper / lower / title / clean"))
 
+# == Function Test ==
+#print(myUpper("AbCdDyH1"))
+#print(myLower("AbCdDyH"))
+#print(myTitle("hello world, test, test"))
+#print(myClean("  hello  world  "))
 
-print(myUpper("AbCdDyH1"))
-print(myLower("AbCdDyH"))
-print(myTitle("hello world, test, test"))
-print(myClean("  hello  world  "))
+chain = str(input("Please enter a string: "))
+param = str(input("Please enter the parameter: upper / lower / title / clean"))
+
+match param:
+    case "upper":
+        myUpper(chain)
+    case "lower":
+        myLower(chain)
+    case "title":
+        myTitle(chain)
+    case "clean":
+        myClean(chain)
+    case _:
+        
