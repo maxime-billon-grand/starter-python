@@ -1,11 +1,7 @@
-# Dictionary
-d = {}
- 
-# Adding the key value pair
-d[5] = 3
-d[10] = 4
-print("Dictionary", d)
- 
-# Removing key-value pair
-del d[10]
-print("Dictionary", d)
+wordlist = ["Hello", "world", "hey!", "comment", "va?"]
+for word in wordlist:
+    i = wordlist.index(word)
+    if not word.isalpha():
+        del wordlist[i]
+
+print(wordlist)

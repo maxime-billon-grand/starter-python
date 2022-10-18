@@ -11,8 +11,9 @@ wordlist = f.read().split(" ")
 dico = {}
 
 for i in wordlist:
-    j = len(i)
-    dico[j] = dico.get(j, 0) +1
+    if i.isalpha():
+        j = len(i)
+        dico[j] = dico.get(j, 0) +1
 
 # dico[size] will be the number of words with size letters
 print("There are",dico[size],"word with",size,"letters")
