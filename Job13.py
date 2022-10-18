@@ -8,14 +8,14 @@ f = open("./File_job12/data.txt", "r")
 wordlist = f.read().split(" ")
 
 # Creating a dictionnary with the {size : number of words with this size}
-dico = {}
+larousse = {}
 
 for i in wordlist:
     if i.isalpha():
         j = len(i)
-        dico[j] = dico.get(j, 0) +1
+        larousse[j] = larousse.get(j, 0) +1
 
 # dico[size] will be the number of words with size letters
-print("There are",dico[size],"word with",size,"letters")
+print("There are",larousse[size],"word with",size,"letters")
 
-# DEMANDER S'IL FAUT ENLEVER LES CARACTERES SPECIAUX OU LES MOTS CONTENANTS DES CARACTERES SPECIAUX ???
+# Ajouter une fonction regex

@@ -7,6 +7,7 @@ l, h = 1, 1
 tiret = "-"
 space = " "
 
+# Loop for the lines
 while h <= height:
     print("|", end="")
     if h == 1 or h == height:
@@ -15,3 +16,4 @@ while h <= height:
         print((lenght-2)*space, end="")
     print("|")
     h +=1
+
