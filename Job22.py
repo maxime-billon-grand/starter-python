@@ -1,10 +1,10 @@
+# This function create a substitute to the string.index() method
 def searchLetterInList(letter:str, list:list):
     i,j = 0,0
     for l in list:
         if l == letter:
             j=i
-            i+=1
-            
+            i+=1  
         i+=1
     return j
 
