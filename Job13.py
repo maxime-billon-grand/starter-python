@@ -15,6 +15,9 @@ for i in wordlist:
         j = len(i)
         larousse[j] = larousse.get(j, 0) +1
 
+# Asking for the word size to look for
+size = int(input("Please enter a word size: "))
+
 # dico[size] will be the number of words with size letters
 print("There are",larousse[size],"word with",size,"letters")
 print(larousse)
