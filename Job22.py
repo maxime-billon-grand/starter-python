@@ -14,8 +14,8 @@ def searchLetterInList(letter:str, list:list):
 
 #==============Function UPPER======================
 def myUpper(s:str):
-    upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-    lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Ç","À","É","È"]
+    lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ç","à","é","è"]
 
     l = list(s)                         # Place str in a list
     j=0
@@ -29,8 +29,8 @@ def myUpper(s:str):
 
 #==============Function LOWER======================
 def myLower(s:str):
-    upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-    lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Ç","À","É","È"]
+    lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ç","à","é","è"]
 
     l = list(s)                         # Place str in a list
     j=0
@@ -44,14 +44,15 @@ def myLower(s:str):
 
 #==============Function TITLE======================
 def myTitle(s:str):
-    upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-    lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Ç","À","É","È"]
+    lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ç","à","é","è"]
+    sep=[" ", ",", ".", ";", "-"]
 
     l = list(s)                 # Place str in a list
 # Replace the first character & the first character after space by the uppercase
     i = 0
     while i+1 <= len(l):
-        if i == 0 or l[i-1] == " " and l[i] in lower:
+        if i == 0 or l[i-1] in sep and l[i] in lower:
             j=searchLetterInList(l[i], lower)
             l[i] = upper[j]
 
