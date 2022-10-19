@@ -1,22 +1,23 @@
 # ================ Function with some of system function (len, min, insert) ====================================
 def noSortList(*nbr:int):
 
-    for n in nbr:                                       # Check if all nbr are integer
+    # Check if all nbr are integer
+    for n in nbr:                                       
         if type(n)is not int:
             raise TypeError (n + " is not an integer")
 
-# Put the nbr in a list, they are in an tuple
+    # Put the nbr in a list, they are in an tuple
     myList= list(nbr)
 
-# This is a loop which take the minimum value, move it at the beginning of the list
-# and then repeat the process in the list minus the element just moved. 
+    # This is a loop which take the minimum value, move it at the beginning of the list
+    # and then repeat the process in the list minus the element just moved. 
     i=0
     while i+1 < len(myList):
 
-# Find minimum value in the last part of the list
+        # Find minimum value in the last part of the list
         minimumValue = min(myList[i: len(myList)])
 
-# Find the indice of the minimum value, remove it from the list and add it at the beginning of the list
+        # Find the indice of the minimum value, remove it from the list and add it at the beginning of the list
         indexMin = myList.index(minimumValue)
         del myList[indexMin]
         myList.insert(i, minimumValue)

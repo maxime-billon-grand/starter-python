@@ -12,7 +12,7 @@ match askTest:
         f = open("./File_job12/data-test.txt", "r")
         wordlist= f.read().split(" ")
     case "N":
-        f = open("./File_job12/data-test.txt", "r")
+        f = open("./File_job12/data.txt", "r")
         wordlist= f.read().split(" ")
     case _:
         askTest = str(input("You didnt' enter a valid answer\nDo you want to test the program with a smaller file ? (Y/N):"))
