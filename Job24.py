@@ -41,7 +41,7 @@ if listAnagrams == []:
     print("There is no anagram with the same number of letter that you entered.")
     exit()
 
-# Second loop to keep only the anagrams of the one entered by the user
+# Second loop to remove word that are not an anagram of the one entered by the user
 for item2 in reversed(listAnagrams):
     if not isAnagram(word, item2):
         listAnagrams.remove(item2)
