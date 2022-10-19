@@ -17,5 +17,4 @@ for i in wordlist:
 
 # dico[size] will be the number of words with size letters
 print("There are",larousse[size],"word with",size,"letters")
-
-# Ajouter une fonction regex
+print(larousse)
