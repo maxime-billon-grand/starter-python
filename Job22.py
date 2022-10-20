@@ -24,8 +24,11 @@ def myUpper(s:str):
             i = searchLetterInList(letter, lower)
             l[j] = upper[i]
         j+=1
-    s = "".join(l)                      # Recreate the str from the list
-    return s
+    
+    s2 = ""
+    for e in l:                         # Recreate the str from the list
+        s2 += e
+    return s2
 
 #==============Function LOWER======================
 def myLower(s:str):
@@ -39,8 +42,11 @@ def myLower(s:str):
             i=searchLetterInList(letter, upper)
             l[j] = lower[i]
         j+=1
-    s = "".join(l)                      # Recreate the str from the list
-    return s
+    
+    s2 = ""
+    for e in l:                         # Recreate the str from the list
+        s2 += e
+    return s2
 
 #==============Function TITLE======================
 def myTitle(s:str):
@@ -58,8 +64,10 @@ def myTitle(s:str):
 
         i+=1
 
-    s = "".join(l)              # Recreate the str from the list
-    return s
+    s2 = ""
+    for e in l:                         # Recreate the str from the list
+        s2 += e
+    return s2
 
 #==============Function CLEAN======================
 def myClean(s:str):
@@ -80,8 +88,10 @@ def myClean(s:str):
         else:
             i+=1
     
-    s = "".join(l)
-    return s
+    s2 = ""
+    for e in l:                         # Recreate the str from the list
+        s2 += e
+    return s2
 
 
 # == For testing the functions ==
