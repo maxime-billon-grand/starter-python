@@ -58,9 +58,11 @@ def myTitle(s:str):
 # Replace the first character & the first character after space by the uppercase
     i = 0
     while i+1 <= len(l):
-        if i == 0 or l[i-1] in sep and l[i] in lower:
+        if (i == 0 or l[i-1] in sep) and l[i] in lower:
             j=searchLetterInList(l[i], lower)
             l[i] = upper[j]
+        elif i > 0:
+            l[i]=myLower(l[i])
 
         i+=1
 
