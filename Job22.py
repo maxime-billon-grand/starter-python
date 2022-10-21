@@ -3,8 +3,7 @@ def searchLetterInList(letter:str, list:list):
     i,j = 0,0
     for l in list:
         if l == letter:
-            j=i
-            i+=1  
+            j=i 
         i+=1
     return j
 
